@@ -1,0 +1,208 @@
+/* Base */
+body{
+background: url(ima1.png) no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+.report-section {
+  padding: 50px 20px;
+}
+
+.form-title {
+  text-align: center;
+  color: #39ff14;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #39ff14;
+}
+
+/* Barre de progression */
+.progressbar {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.progressbar::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  background-color: #222;
+  z-index: -1;
+}
+
+.progress {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  background: linear-gradient(90deg, #39ff14, #39ff14);
+  width: 0%;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.progress-step {
+  width: 30px;
+  height: 30px;
+  background-color: #222;
+  border-radius: 50%;
+  border: 2px solid #39ff14;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.progress-step.active {
+  background: #39ff14;
+  color: #000;
+  box-shadow: 0 0 10px #191a19;
+}
+
+.progress-step::after {
+  content: attr(data-title);
+  position: absolute;
+  top: 40px;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+/* Étapes du formulaire */
+.form-step {
+  display: none;
+  background: transparent;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(230, 236, 231, 0.986);
+  animation: fadeIn 0.5s ease-in-out;
+  backdrop-filter: blur(5px);
+}
+
+.form-step.active {
+  display: block;
+}
+
+/* Inputs */
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background: #111;
+  border: 1px solid #39ff14;
+  color: #2ddf0a;
+  border-radius: 8px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px #2bff00;
+}
+
+/* Boutons */
+.buttons {
+  text-align: right;
+}
+
+.next-btn, .prev-btn, .submit-btn {
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #39ff14, #39ff14);
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.next-btn:hover, .prev-btn:hover, .submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(214, 243, 240, 0.911);
+}
+
+/* Confirmation */
+.hidden { display: none; }
+
+.confirmation {
+  text-align: center;
+  padding: 60px 20px;
+  animation: fadeIn 0.6s ease;
+}
+
+.confirmation-box {
+  background: #0a0f1f;
+  max-width: 500px;
+  margin: auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(54, 223, 3, 0.801);
+}
+
+.checkmark {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #00ffe1, #0077ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+  animation: popIn 0.4s ease forwards;
+}
+
+.checkmark span {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.btn-home {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: linear-gradient(90deg, #00ffe1, #0077ff);
+  color: #000;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+  0% { transform: scale(0); opacity: 0; }
+  80% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+
+/* Navbar */
+.navbar {
+    background: rgba(207, 5, 5, 0.8);
+    padding: 10px;
+    backdrop-filter: blur(8px);
+    background-color: #2bff00;
+}
+
+.navbar .nav-link {
+    color: #f2f2f2;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #39FF14;
+    text-shadow: 0 0 8px #39FF14;
+}
+
+

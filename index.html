@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XyberShield - Connexion</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+</head>
+<body>
+    <!-- Background Matrix -->
+    <canvas id="matrix-bg"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container d-flex align-items-center">
+    <a class="navbar-brand d-flex align-items-center text-neon" href="#home">
+        <img src="logo.png" alt="Logo XyberClan" style="height: 40px; width: auto; margin-right: 10px;">
+        XyberShield
+    </a>
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</d>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="report.html">Signaler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Éducation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Connexion</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Barre de Recherche -->
+         <div class="search-bar text-center mt-4">
+    <input type="text" class="form-control d-inline-block w-50" placeholder="Rechercher un article, un conseil..." style="border:2px solid #126403; background:#c9d3e2; color:rgb(7, 7, 7); margin-top: 100px;">
+    <button class="btn btn-neon mt-2">Rechercher</button>
+</div>
+    <!-- Hero -->
+    <section id="home" class="hero text-center text-white d-flex flex-column justify-content-center align-items-center">
+   
+
+        <h1 class="display-4 text-neon">Protégez-vous contre les cyberattaques</h1>
+        <p class="lead">Signalez, apprenez et restez en sécurité avec XyberShield</p>
+        <a href="report.html" class="btn btn-neon btn-lg mt-3">Signaler une attaque</a>
+    </section>
+    <!-- Alerte Sécurité -->
+<div class="alert alert-warning text-center mb-0" role="alert" style="background-color:#0A192F; color:#39FF14; border-top:2px solid #39FF14;">
+    ⚠ Attention : Nouvelle vague de phishing sur WhatsApp détectée ! Soyez vigilant.
+</div
+    
+    <-- Statistiques -->
+    <section class="stats-section py-5 text-white text-center">
+        <div class="container">
+            <h2 class="text-neon mb-4">Statistiques</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="display-5 text-neon">250+</h3>
+                    <p>Signalements traités</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="display-5 text-neon">95%</h3>
+                    <p>Comptes récupérés</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="display-5 text-neon">1000+</h3>
+                    <p>Utilisateurs éduqués</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Éducation (Preview) -->
+    <section id="education" class="education-section py-5 text-white text-center">
+        <div class="container">
+            <h2 class="text-neon mb-4">Éducation Cybersécurité</h2>
+            <p class="mb-5">Découvrez les meilleures pratiques pour rester en sécurité en ligne.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white shadow-lg border-neon">
+                        <div class="card-body">
+                            <h5 class="card-title">Évitez le phishing</h5>
+                            <p class="card-text">Ne cliquez jamais sur des liens suspects et vérifiez toujours l’adresse de l’expéditeur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white shadow-lg border-neon">
+                        <div class="card-body">
+                            <h5 class="card-title">Activez la 2FA</h5>
+                            <p class="card-text">La double authentification protège vos comptes même si votre mot de passe est volé.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white shadow-lg border-neon">
+                        <div class="card-body">
+                            <h5 class="card-title">Mots de passe forts</h5>
+                            <p class="card-text">Utilisez des mots de passe longs et uniques pour chaque compte.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Actualités -->
+<section class="news py-5 text-white text-center">
+    <div class="container">
+        <h2 class="text-neon mb-4">Actualités Cybersécurité</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card bg-dark text-white shadow-lg border-neon">
+                    <div class="card-body">
+                        <h5 class="card-title">Phishing : nouvelle vague en Afrique</h5>
+                        <p class="card-text">Découvrez comment éviter les attaques ciblées sur les réseaux sociaux.</p>
+                        <a href="#" class="btn btn-neon">Lire plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white shadow-lg border-neon">
+                    <div class="card-body">
+                        <h5 class="card-title">Sécurisez votre WhatsApp</h5>
+                        <p class="card-text">Activez la double authentification dès aujourd'hui.</p>
+                        <a href="#" class="btn btn-neon">Lire plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white shadow-lg border-neon">
+                    <div class="card-body">
+                        <h5 class="card-title">Mots de passe sécurisés</h5>
+                        <p class="card-text">Utilisez des générateurs et ne réutilisez jamais le même mot de passe.</p>
+                        <a href="#" class="btn btn-neon">Lire plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Bouton WhatsApp flottant -->
+<a href="https://wa.me/237654269488" target="_blank" class="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+    <!-- Témoignages -->
+<section class="testimonials py-5 text-white text-center">
+    <div class="container">
+        <h2 class="text-neon mb-4">Ce que disent nos utilisateurs</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="téléchargement.jpeg" class="rounded-circle mb-3" alt="User 1" style="width:80px;height:80px;">
+                        <p class="mb-2">"Grâce à XyberShield, j'ai pu récupérer mon compte Facebook piraté en moins de 48h !"</p>
+                        <h6 class="text-neon">— Gregoire L.</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="téléchargement (2).jpeg" class="rounded-circle mb-3" alt="User 2" style="width:80px;height:80px;">
+                        <p class="mb-2">"La plateforme m'a alerté sur un mail frauduleux. Service rapide et efficace !"</p>
+                        <h6 class="text-neon">— Sandra M.</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="téléchargement (1).jpeg" class="rounded-circle mb-3" alt="User 3" style="width:80px;height:80px;">
+                        <p class="mb-2">"Enfin une solution locale contre le phishing ! Bravo à l'équipe XyberShield."</p>
+                        <h6 class="text-neon">— Cedrik D.</h6>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+</section>
+<!-- FAQ -->
+<section class="faq py-5 text-white text-center">
+    <div class="container">
+        <h2 class="text-neon mb-4">FAQ</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item bg-dark border-neon mb-3">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" style="background:#0A192F; color:#39FF14;">
+                        Que faire si mon compte Facebook est piraté ?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Changez immédiatement votre mot de passe et activez la double authentification. Signalez l'incident ici.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-dark border-neon mb-3">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" style="background:#012253; color:#39FF14;">
+                        Combien de temps pour un retour après signalement ?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        <p>En moyenne 24 à 48 heures pour une première réponse de notre équipe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Nos Partenaires -->
+<section class="partners py-5 text-center text-white">
+    <div class="container">
+        <h2 class="text-neon mb-4">Nos Partenaires</h2>
+        <p class="mb-5">XyberShield collabore avec des institutions de confiance pour assurer votre sécurité en ligne.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-3 col-6 mb-4">
+                <div class="partner-card">
+                    <img src="téléchargement (4).jpeg" alt="Minpostel" class="img-fluid">
+                    <p class="mt-2">Ministère des Postes et Télécommunications</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 mb-4">
+                <div class="partner-card">
+                    <img src="téléchargement (3).jpeg" alt="Interpol" class="img-fluid">
+                    <p class="mt-2">Interpol</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 mb-4">
+                <div class="partner-card">
+                    <img src="téléchargement (5).jpeg" alt="Gendarmerie Cameroun" class="img-fluid">
+                    <p class="mt-2">Gendarmerie Camerounaise</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="engagements" class="commitments-section">
+  <div class="container">
+    <h2 class="section-title">Nos Engagements</h2>
+    <div class="commitments-grid">
+      <div class="commitment-card">
+        <i class="icon fas fa-shield-alt"></i>
+        <h3>Protection Totale</h3>
+        <p>Nous assurons la confidentialité et la sécurité de vos informations numériques.</p>
+      </div>
+      <div class="commitment-card">
+        <i class="icon fas fa-bolt"></i>
+        <h3>Réactivité</h3>
+        <p>Une équipe disponible 24h/24 pour répondre rapidement à vos signalements.</p>
+      </div>
+      <div class="commitment-card">
+        <i class="icon fas fa-users"></i>
+        <h3>Engagement Humain</h3>
+        <p>Un accompagnement personnalisé pour chaque utilisateur victime de cybercrime.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Notre Équipe -->
+<section class="team py-5 text-center text-white">
+    <div class="container">
+        <h2 class="text-neon mb-4">Notre Équipe</h2>
+        <p class="mb-5">Les passionnés derrière XyberShield, engagés pour votre cybersécurité.</p>
+        <div class="row justify-content-center">
+            
+            <!-- Membre 1 -->
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="team-card p-3">
+                    <img src="IMG-20250729-WA0031.jpg" alt="Cedrik" class="rounded-circle mb-3 team-img">
+                    <h5 class="text-neon">Cedrik Yepmo</h5>
+                    <p>Founder &rep.secu</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Membre 2 -->
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="team-card p-3">
+                    <img src="téléchargement.jpeg" alt="Brandon" class="rounded-circle mb-3 team-img">
+                    <h5 class="text-neon">onana gregoire </h5>
+                    <p>pentester</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Membre 3 -->
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="team-card p-3">
+                    <img src="almight.jpg" alt="Membre" class="rounded-circle mb-3 team-img">
+                    <h5 class="text-neon">akanna signing</h5>
+                    <p>Dév</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Membre 4 -->
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="team-card p-3">
+                    <img src="téléchargement (10).jpeg" alt="Membre" class="rounded-circle mb-3 team-img">
+                    <h5 class="text-neon">lembou pharel</h5>
+                    <p>Exp Rés</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Membre 5 -->
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="team-card p-3">
+                    <img src="IMG-20250728-WA0042.jpg" alt="Membre" class="rounded-circle mb-3 team-img">
+                    <h5 class="text-neon">akoumou darren</h5>
+                    <p>Data Analyst</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Contact + Footer -->
+    <footer id="contact" class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <h5 class="text-neon mb-3">Contactez-nous</h5>
+            <p>Email : support@xybershield.com | WhatsApp : +237 654 269 488</p>
+            <div class="social-icons mb-3">
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-whatsapp fa-lg"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
+            </div>
+            <p class="small">&copy; 2025 XyberShield. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Scroll smooth
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>

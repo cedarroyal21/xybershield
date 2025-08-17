@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signalement - XyberShield</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="report.css">
+  
+</head>
+<body>
+    <!-- Background Matrix -->
+    <canvas id="matrix-bg"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container d-flex align-items-center">
+    <a class="navbar-brand d-flex align-items-center text-neon" href="#index.html">
+        <img src="logo.png" alt="Logo XyberClan" style="height: 40px; width: auto; margin-right: 10px;">
+        XyberShield
+    </a>
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</d>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html#">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="report.html">Signaler</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+<!-- ================= FORMULAIRE DE SIGNALEMENT ================= -->
+<section class="report-section">
+  <div class="container">
+    <h2 class="form-title">Formulaire de Signalement</h2>
+
+    <!-- Barre de progression -->
+    <div class="progressbar">
+      <div class="progress" id="progress"></div>
+      <div class="progress-step active" data-title="Infos"></div>
+      <div class="progress-step" data-title="Détails"></div>
+      <div class="progress-step" data-title="Confirmation"></div>
+    </div>
+
+    <form id="multiStepForm">
+      
+      <!-- Étape 1 -->
+      <div class="form-step active">
+        <h3>Informations personnelles</h3>
+        <input type="text" name="nom" placeholder="Nom complet" required>
+        <input type="email" name="email" placeholder="Adresse email" required>
+        <input type="tel" name="telephone" placeholder="Téléphone" required>
+        <div class="buttons">
+          <button type="button" class="next-btn">Suivant</button>
+        </div>
+      </div>
+
+      <!-- Étape 2 -->
+      <div class="form-step">
+        <h3>Détails du problème</h3>
+        <select name="type" required>
+          <option value="">Sélectionner un type de cyberattaque</option>
+          <option value="phishing">Phishing</option>
+          <option value="compte-pirate">Piratage de compte</option>
+          <option value="arnaque">Arnaque en ligne</option>
+        </select>
+        <textarea name="description" placeholder="Décrivez le problème" required></textarea>
+        <div class="buttons">
+          <button type="button" class="prev-btn">Précédent</button>
+          <button type="button" class="next-btn">Suivant</button>
+        </div>
+      </div>
+
+      <!-- Étape 3 -->
+      <div class="form-step">
+        <h3>Preuves & Confirmation</h3>
+        <input type="file" name="capture" accept="image/*">
+        <label>
+          <input type="checkbox" name="anonyme"> Je souhaite rester anonyme
+        </label>
+        <div class="buttons">
+          <button type="button" class="prev-btn">Précédent</button>
+          <button type="submit" class="submit-btn">Envoyer</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+<!-- Confirmation -->
+<div id="confirmation" class="confirmation hidden">
+  <div class="confirmation-box">
+    <div class="checkmark"><span>✔</span></div>
+    <h2>Signalement envoyé avec succès</h2>
+    <p>Merci de nous avoir contactés. Notre équipe vous répondra rapidement.</p>
+    <a href="#home" class="btn-home">Retour à l'accueil</a>
+  </div>
+</div>
+<script src="report.js"></script>
+<script>
+        // Scroll smooth
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
